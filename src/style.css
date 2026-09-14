@@ -72,11 +72,11 @@ a {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background: #e9e6e0;
+  background: #e7e5e208;
   position: relative;
   box-shadow:
     15px 15px 30px rgba(0, 0, 0, 0.15),
-    -15px -15px 30px rgba(255, 255, 255, 0.8);
+    -10px -10px 30px rgba(255, 254, 254, 0.896);
 }
 .namber {
   position: absolute;
