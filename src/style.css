@@ -38,6 +38,9 @@ select {
 .city:last-child {
   border: none;
 }
+#cities .city {
+  border-bottom: 2px dashed rgba(124, 121, 121, 0.397);
+}
 .time {
   background: #e7e5e2;
   border-radius: 40px;
