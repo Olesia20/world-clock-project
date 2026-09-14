@@ -42,16 +42,16 @@ function updateTime() {
     "h:mm[<small>]:ss[</small>] [<small>]A[</small>]",
   );
 }
-
+let cityInterval;
 function updateCity(event) {
   let cityTimeZone = event.target.value;
   if (cityTimeZone === "current") {
     cityTimeZone = moment.tz.guess();
   }
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
-
   let citisElement = document.querySelector("#cities");
-  setInterval(() => {
+  clearInterval(cityInterval);
+  cityInterval = setInterval(() => {
     let cityTime = moment().tz(cityTimeZone);
     citisElement.innerHTML = `<div class="city">
           <div>
