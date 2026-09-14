@@ -63,6 +63,8 @@ footer {
 }
 a {
   text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
 }
 .clock-number {
   margin-top: -35px;
